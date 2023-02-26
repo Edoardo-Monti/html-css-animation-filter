@@ -184,7 +184,7 @@
     position: absolute;
     top: -10px;
     left: 10%;
-    background: #df1c1c;
+    background: #ffffff;
     width: 60px;
     height: 20px;
 }
@@ -192,7 +192,7 @@
     position: absolute;
     bottom: -10px;
     right: 20%;
-    background: #c42c2c;
+    background: #ffffff;
     width: 60px;
     height: 20px;
 }
@@ -223,5 +223,76 @@
 
     100%{
         right: 140px;
+    }
+}
+
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: 10%;
+    }
+
+    20%{
+        left: 145px;
+        top: -10px;
+    }
+
+    40%{
+        left: 145px;
+        top: 60px;
+    }
+
+    60%{
+        left: -10px;
+        top: 60px;
+    }
+
+    80%{
+        left: -10px;
+        top: -10px;
+    }
+
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: moving2 2s linear infinite;
+}
+
+@keyframes moving2{
+    0%{
+        right: 20%;
+    }
+
+    20%{
+        right: 145px;
+        bottom: -10px;
+    }
+
+    40%{
+        right: 145px;
+        bottom: 60px;
+    }
+
+    60%{
+        right: -20px;
+        bottom: 60px;
+    }
+
+    80%{
+        right: -20px;
+        bottom: -10px;
+    }
+
+    100%{
+        right: 20px;
+        bottom: -10px;
     }
 }
